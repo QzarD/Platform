@@ -1,0 +1,24 @@
+{
+  "name": "platform",
+  "version": "1.0.0",
+  "description": "Landing a new platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QzarD/Platform.git"
+  },
+  "author": "QzarD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QzarD/Platform/issues"
+  },
+  "homepage": "https://github.com/QzarD/Platform#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
