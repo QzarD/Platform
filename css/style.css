@@ -2638,6 +2638,24 @@ template {
   font-weight: 500;
   color: #282828; }
 
+.section-inner {
+  width: 80%; }
+
+.title {
+  margin-top: 10px;
+  font-size: 40px; }
+  .title .red-points {
+    color: #ff6d6d; }
+
+.subtitle {
+  color: #ff6d6d;
+  font-size: 16px; }
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(40, 40, 40, 0.6); }
+
 .header {
   background: url("../img/header.jpg") no-repeat 50%;
   height: 813px;
@@ -2694,7 +2712,7 @@ template {
       color: rgba(40, 40, 40, 0.6); }
 
 .platforms-like {
-  height: 725px;
+  min-height: 725px;
   display: flex; }
   .platforms-like .content {
     width: 60%;
@@ -2703,20 +2721,49 @@ template {
     align-items: center; }
     .platforms-like .content .inner {
       width: 60%; }
-      .platforms-like .content .inner .subtitle {
-        color: #ff6d6d;
-        font-size: 16px; }
-      .platforms-like .content .inner .title {
-        margin-top: 10px;
-        font-size: 40px; }
-        .platforms-like .content .inner .title .red-points {
-          color: #ff6d6d; }
       .platforms-like .content .inner .text {
-        margin-top: 50px;
-        font-size: 16px;
-        line-height: 1.5;
-        color: rgba(40, 40, 40, 0.6); }
+        margin-top: 50px; }
   .platforms-like .image {
     width: 40%;
     background: url("../img/rectangle.jpg") no-repeat 50% 50%;
     background-size: cover; }
+
+.section-features {
+  min-height: 676px;
+  background-color: #f6f5f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  .section-features::after {
+    content: '';
+    position: absolute;
+    width: 314px;
+    height: 676px;
+    background: url("../img/Desktop-left.jpg") no-repeat;
+    left: 0; }
+  .section-features::before {
+    content: '';
+    position: absolute;
+    width: 314px;
+    height: 676px;
+    background: url("../img/Desktop-right.jpg") no-repeat;
+    right: 0; }
+  .section-features .section-inner {
+    z-index: 1;
+    position: relative; }
+  .section-features .features {
+    display: flex;
+    justify-content: space-around; }
+    .section-features .features .feature {
+      max-width: 320px; }
+      .section-features .features .feature-image {
+        margin-top: 80px; }
+        .section-features .features .feature-image img {
+          max-height: 65px; }
+      .section-features .features .feature-title {
+        font-size: 22px;
+        margin-top: 20px; }
+      .section-features .features .feature-subtitle {
+        margin-top: 15px; }

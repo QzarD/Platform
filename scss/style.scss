@@ -31,6 +31,28 @@
     color: #282828;
 }
 
+.section-inner{
+    width: 80%;
+}
+
+.title{
+    margin-top: 10px;
+    font-size: 40px;
+    .red-points{
+        color: #ff6d6d;
+    }
+}
+.subtitle{
+    color: #ff6d6d;
+    font-size: 16px;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba($color: #282828, $alpha: 0.6);
+}
+
 //  COMMON -->
 
 .header{
@@ -42,7 +64,6 @@
     justify-content: center;
     align-items: center;
     &-inner{
-        //width: 1170px;
         width: 50%;
         .header-title{
             @include font-exo-th;
@@ -102,7 +123,7 @@
 }
 
 .platforms-like{
-    height: 725px;
+    min-height: 725px;
     display: flex;
     .content{
         width: 60%;
@@ -111,22 +132,8 @@
         align-items: center;
         .inner{
             width: 60%;
-            .subtitle{
-                color: #ff6d6d;
-                font-size: 16px;
-            }
-            .title{
-                margin-top: 10px;
-                font-size: 40px;
-                .red-points{
-                    color: #ff6d6d;
-                }
-            }
             .text{
                 margin-top: 50px;
-                font-size: 16px;
-                line-height: 1.5;
-                color: rgba($color: #282828, $alpha: 0.6);
             }
         }
     }
@@ -134,5 +141,55 @@
         width: 40%;
         background: url('../img/rectangle.jpg') no-repeat 50% 50%;
         background-size: cover;
+    }
+}
+
+.section-features{
+    min-height: 676px;
+    background-color: #f6f5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 314px;
+        height: 676px;
+        background: url('../img/Desktop-left.jpg') no-repeat;
+        left: 0;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 314px;
+        height: 676px;
+        background: url('../img/Desktop-right.jpg') no-repeat;
+        right: 0;
+    }
+    .section-inner{
+        z-index: 1;
+        position: relative;
+    }
+    .features{
+        display: flex;
+        justify-content: space-around;
+        .feature{
+            max-width: 320px;
+            &-image{
+                margin-top: 80px;
+                img{
+                    max-height: 65px;
+                }
+            }
+            &-title{
+                font-size: 22px;
+                margin-top: 20px;
+            }
+            &-subtitle{
+                margin-top: 15px;
+            }
+        }
     }
 }
