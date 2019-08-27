@@ -2767,3 +2767,20 @@ template {
         margin-top: 20px; }
       .section-features .features .feature-subtitle {
         margin-top: 15px; }
+
+.new-design {
+  display: flex;
+  min-height: 551px; }
+  .new-design .image-design {
+    width: 50%;
+    margin: auto 0; }
+    .new-design .image-design img {
+      width: 100%; }
+  .new-design .wrapper-design {
+    width: 50%;
+    margin: auto 0 auto 30px; }
+    .new-design .wrapper-design .inner .title {
+      width: 60%; }
+    .new-design .wrapper-design .inner .text {
+      margin-top: 30px;
+      width: 70%; }
