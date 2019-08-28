@@ -306,3 +306,83 @@
         }
     }
 }
+
+.section-try-now{
+    text-align: center;
+    min-height: 468px;
+    background: #323969;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .section-inner{
+        margin: 0 auto;
+        .action{
+            text-align: right;
+            margin: 35px 65px 0 0;
+            display: flex;
+            justify-content: right;
+            
+            img{}
+            .action-text{
+                font-size: 16px;
+                @include font-exo-r;
+            }
+        }
+        .inputs{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 240px;
+                height: 50px;
+                background: rgba($color: #fff, $alpha: 0.2);
+                border: 1px solid rgba($color: #fff, $alpha: 0.5);
+                border-radius: 3px;
+                color: #f6f5f3;
+                font-size: 16px;
+                @include font-exo-r;
+                padding-left: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                @include font-exo-r;
+                .button{
+                    width: 266px;
+                    padding: 18px 2px;
+                    background-color: #ff6d6d;
+                    border-radius: 3px;
+                    display: inline-block;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                    &:hover{
+                        color: #ff6d6d;
+                        background-color: #fff;
+                        border: 2px solid #ff6d6d;
+                        padding: 16px 0;
+                    }
+                }
+            }
+        }
+        .agree{
+            margin-top: 35px;
+            color: rgba(255, 255, 255, 0.6);
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.6);
+                display: inline-block;
+                &:after{
+                    display: block;
+                    content: '';
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    transition: all 0.15s ease-out;
+                }
+                &:hover:after, &:focus:after{
+                    width: 0;
+                }
+            }
+        }
+    }
+}
