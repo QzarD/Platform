@@ -14,7 +14,7 @@
 }
 @mixin font-exo-r-i{
     font-family: 'Exo', sans-serif;
-    font-weight: 400i;
+    font-style: italic;
 }
 @mixin font-exo-m{
     font-family: 'Exo', sans-serif;
@@ -196,7 +196,7 @@
 
 .new-design{
     display: flex;
-    min-height: 551px;
+    //min-height: 551px;
     .image-design{
         width: 50%;
         margin: auto 0;
@@ -215,6 +215,56 @@
             .text{
                 margin-top: 30px;
                 width: 70%;
+            }
+        }
+    }
+}
+
+.section-founders{
+    background-color: #000;
+    min-height: 648px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .section-inner{
+        margin: auto 0;
+        .founders{
+            display: flex;
+            .founder{
+                width: 33%;
+                .image{
+                    img{
+                        height: 76px;
+                    }
+                }
+                .name{
+                    margin-top: 20px;
+                    font-size: 22px;
+                    color: #fff;
+                }
+                .prof{
+                    margin-top: 10px;
+                    font-size: 16px;
+                    color: #ff6d6d;
+                }
+                .founder-text{
+                    margin-top: 30px;
+                    @include font-exo-r-i;
+                    font-size: 16px;
+                    color: rgba($color: #fff, $alpha: 0.66);
+                    width: 90%;
+                }
+            }
+        }
+        .partners{
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-around;
+            .partner{
+                margin: auto 0;
+                img{
+                    filter: invert(80%);
+                }
             }
         }
     }

@@ -2769,8 +2769,7 @@ template {
         margin-top: 15px; }
 
 .new-design {
-  display: flex;
-  min-height: 551px; }
+  display: flex; }
   .new-design .image-design {
     width: 50%;
     margin: auto 0; }
@@ -2784,3 +2783,41 @@ template {
     .new-design .wrapper-design .inner .text {
       margin-top: 30px;
       width: 70%; }
+
+.section-founders {
+  background-color: #000;
+  min-height: 648px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .section-founders .section-inner {
+    margin: auto 0; }
+    .section-founders .section-inner .founders {
+      display: flex; }
+      .section-founders .section-inner .founders .founder {
+        width: 33%; }
+        .section-founders .section-inner .founders .founder .image img {
+          height: 76px; }
+        .section-founders .section-inner .founders .founder .name {
+          margin-top: 20px;
+          font-size: 22px;
+          color: #fff; }
+        .section-founders .section-inner .founders .founder .prof {
+          margin-top: 10px;
+          font-size: 16px;
+          color: #ff6d6d; }
+        .section-founders .section-inner .founders .founder .founder-text {
+          margin-top: 30px;
+          font-family: 'Exo', sans-serif;
+          font-style: italic;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.66);
+          width: 90%; }
+    .section-founders .section-inner .partners {
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-around; }
+      .section-founders .section-inner .partners .partner {
+        margin: auto 0; }
+        .section-founders .section-inner .partners .partner img {
+          filter: invert(80%); }
