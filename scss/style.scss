@@ -24,7 +24,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-// <-- COMMON 
+// COMMON 
 
 .body{
     @include font-exo-m;
@@ -38,6 +38,7 @@
 .title{
     margin-top: 10px;
     font-size: 40px;
+    line-height: 1;
     .red-points{
         color: #ff6d6d;
     }
@@ -45,6 +46,7 @@
 .subtitle{
     color: #ff6d6d;
     font-size: 16px;
+    letter-spacing: 3px;
 }
 
 .text{
@@ -53,7 +55,7 @@
     color: rgba($color: #282828, $alpha: 0.6);
 }
 
-//  COMMON -->
+//  COMMON END
 
 .header{
     background: url('../img/header.jpg') no-repeat 50%;
@@ -208,7 +210,6 @@
         width: 50%;
         margin: auto 0 auto 30px;
         .inner{
-            .subtitle{}
             .title{
                 width: 60%;
             }
@@ -226,7 +227,19 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url('../img/bg-founder.png') no-repeat 50%;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
     .section-inner{
+        z-index: 1;
         margin: auto 0;
         .founders{
             display: flex;
@@ -265,6 +278,30 @@
                 img{
                     filter: invert(80%);
                 }
+            }
+        }
+    }
+}
+
+.section-one-feature{
+    background: #f6f5f3;
+    text-align: center;
+    .section-inner{
+        margin: 0 auto;
+        .wrapper{
+            min-height: 375px;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .text{
+                margin-top: 40px;
+            }
+        }
+        .image{
+            img{
+                max-width: 100%;
             }
         }
     }
