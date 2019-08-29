@@ -122,6 +122,11 @@
             color: rgba($color: #282828, $alpha: 0.6);
         }
     }
+    @media (max-width: 1080px){
+        &-inner{
+            width: 90%;
+        }
+    }
 }
 
 .platforms-like{
@@ -143,6 +148,14 @@
         width: 40%;
         background: url('../img/rectangle.jpg') no-repeat 50% 50%;
         background-size: cover;
+    }
+    @media (max-width: 1080px){
+        .content{
+            margin-top: 20px;
+            .inner{
+                width: 90%;
+            }
+        }
     }
 }
 
@@ -173,6 +186,9 @@
     .section-inner{
         z-index: 1;
         position: relative;
+        @media (max-width: 600px){
+            margin-top: 250px;
+        }
     }
     .features{
         display: flex;
@@ -198,7 +214,6 @@
 
 .new-design{
     display: flex;
-    //min-height: 551px;
     .image-design{
         width: 50%;
         margin: auto 0;
@@ -216,6 +231,18 @@
             .text{
                 margin-top: 30px;
                 width: 70%;
+            }
+            @media (max-width: 1080px){
+                .subtitle{
+                    margin-top: 20px;
+                }
+                .title{
+                    width: 95%;
+                }
+                .text{
+                    margin-top: 20px;
+                    width: 95%;
+                }
             }
         }
     }
@@ -277,8 +304,15 @@
                 margin: auto 0;
                 img{
                     filter: invert(80%);
+                    width: 100%;
                 }
             }
+        }
+    }
+    @media (max-width: 600px){
+        .section-inner{
+            margin-top: 20px;
+            width: 95%;
         }
     }
 }
@@ -297,6 +331,9 @@
             margin: 0 auto;
             .text{
                 margin-top: 40px;
+            }
+            @media (max-width: 600px){
+                width: 100%;
             }
         }
         .image{
@@ -317,11 +354,20 @@
     justify-content: center;
     .section-inner{
         margin: 0 auto;
+        @media (max-width: 1080px){
+            margin: 20px auto;
+        }
         .action{
             text-align: right;
             margin: 35px 65px 0 0;
             display: flex;
             justify-content: right;
+            @media (max-width: 1180px){
+                margin-right: 0;
+            }
+            @media (max-width: 1080px){
+                justify-content: center;
+            }
             .action-text{
                 font-size: 16px;
                 @include font-exo-r;
@@ -331,6 +377,9 @@
             margin-top: 15px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: 1080px){
+                flex-direction: column;
+            }
             input{
                 width: 240px;
                 height: 50px;
@@ -341,6 +390,9 @@
                 font-size: 16px;
                 @include font-exo-r;
                 padding-left: 30px;
+                @media (max-width: 1080px){
+                    margin: 0 auto;
+                }
             }
             a{
                 text-decoration: none;
@@ -491,6 +543,56 @@
                     color: #cbcbcb;
                     font-size: 20px;
                     margin-left: 24px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1080px){
+        .rectangle{
+            img{
+                height: 100px;
+            }
+        }
+        .footer-inner{
+            width: 90%;
+            .Newsletter{
+                .input-button{
+                    .button-email{
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 730px){
+        .footer-inner{
+            margin-left: 1%;
+            width: 95%;
+            .Start{
+                .Start-text{
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+    @media (max-width: 610px){
+        .footer-inner{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            .Start{
+                margin-left: 90px;
+                .Start-text{
+                    max-width: 70%;
+                    text-align: center;
+                }
+            }
+            .Newsletter{
+                text-align: center;
+                .input-button{
+                    .button-email{
+                        right: 20%;
+                    }
                 }
             }
         }

@@ -2712,6 +2712,9 @@ template {
     .header-inner .header-subtitle {
       margin-top: 18px;
       color: rgba(40, 40, 40, 0.6); }
+  @media (max-width: 1080px) {
+    .header-inner {
+      width: 90%; } }
 
 .platforms-like {
   min-height: 725px;
@@ -2729,6 +2732,11 @@ template {
     width: 40%;
     background: url("../img/rectangle.jpg") no-repeat 50% 50%;
     background-size: cover; }
+  @media (max-width: 1080px) {
+    .platforms-like .content {
+      margin-top: 20px; }
+      .platforms-like .content .inner {
+        width: 90%; } }
 
 .section-features {
   min-height: 676px;
@@ -2755,6 +2763,9 @@ template {
   .section-features .section-inner {
     z-index: 1;
     position: relative; }
+    @media (max-width: 600px) {
+      .section-features .section-inner {
+        margin-top: 250px; } }
   .section-features .features {
     display: flex;
     justify-content: space-around; }
@@ -2785,6 +2796,14 @@ template {
     .new-design .wrapper-design .inner .text {
       margin-top: 30px;
       width: 70%; }
+    @media (max-width: 1080px) {
+      .new-design .wrapper-design .inner .subtitle {
+        margin-top: 20px; }
+      .new-design .wrapper-design .inner .title {
+        width: 95%; }
+      .new-design .wrapper-design .inner .text {
+        margin-top: 20px;
+        width: 95%; } }
 
 .section-founders {
   background-color: #000;
@@ -2833,7 +2852,12 @@ template {
       .section-founders .section-inner .partners .partner {
         margin: auto 0; }
         .section-founders .section-inner .partners .partner img {
-          filter: invert(80%); }
+          filter: invert(80%);
+          width: 100%; }
+  @media (max-width: 600px) {
+    .section-founders .section-inner {
+      margin-top: 20px;
+      width: 95%; } }
 
 .section-one-feature {
   background: #f6f5f3;
@@ -2849,6 +2873,9 @@ template {
       margin: 0 auto; }
       .section-one-feature .section-inner .wrapper .text {
         margin-top: 40px; }
+      @media (max-width: 600px) {
+        .section-one-feature .section-inner .wrapper {
+          width: 100%; } }
     .section-one-feature .section-inner .image img {
       max-width: 100%; }
 
@@ -2862,11 +2889,20 @@ template {
   justify-content: center; }
   .section-try-now .section-inner {
     margin: 0 auto; }
+    @media (max-width: 1080px) {
+      .section-try-now .section-inner {
+        margin: 20px auto; } }
     .section-try-now .section-inner .action {
       text-align: right;
       margin: 35px 65px 0 0;
       display: flex;
       justify-content: right; }
+      @media (max-width: 1180px) {
+        .section-try-now .section-inner .action {
+          margin-right: 0; } }
+      @media (max-width: 1080px) {
+        .section-try-now .section-inner .action {
+          justify-content: center; } }
       .section-try-now .section-inner .action .action-text {
         font-size: 16px;
         font-family: 'Exo', sans-serif;
@@ -2875,6 +2911,9 @@ template {
       margin-top: 15px;
       display: flex;
       justify-content: space-between; }
+      @media (max-width: 1080px) {
+        .section-try-now .section-inner .inputs {
+          flex-direction: column; } }
       .section-try-now .section-inner .inputs input {
         width: 240px;
         height: 50px;
@@ -2886,6 +2925,9 @@ template {
         font-family: 'Exo', sans-serif;
         font-weight: 400;
         padding-left: 30px; }
+        @media (max-width: 1080px) {
+          .section-try-now .section-inner .inputs input {
+            margin: 0 auto; } }
       .section-try-now .section-inner .inputs a {
         text-decoration: none;
         color: #fff;
@@ -3009,3 +3051,30 @@ template {
         color: #cbcbcb;
         font-size: 20px;
         margin-left: 24px; }
+  @media (max-width: 1080px) {
+    .footer .rectangle img {
+      height: 100px; }
+    .footer .footer-inner {
+      width: 90%; }
+      .footer .footer-inner .Newsletter .input-button .button-email {
+        right: 0; } }
+  @media (max-width: 730px) {
+    .footer .footer-inner {
+      margin-left: 1%;
+      width: 95%; }
+      .footer .footer-inner .Start .Start-text {
+        max-width: 150px; } }
+  @media (max-width: 610px) {
+    .footer .footer-inner {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; }
+      .footer .footer-inner .Start {
+        margin-left: 90px; }
+        .footer .footer-inner .Start .Start-text {
+          max-width: 70%;
+          text-align: center; }
+      .footer .footer-inner .Newsletter {
+        text-align: center; }
+        .footer .footer-inner .Newsletter .input-button .button-email {
+          right: 20%; } }
